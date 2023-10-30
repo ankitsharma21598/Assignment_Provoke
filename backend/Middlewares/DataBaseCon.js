@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 //?------------------------------------------
 const DataBaseCon = async () => {
   try {
-    const db_url = "mongodb://127.0.0.1:27017/Assignment_Provoke";
+    const db_url = "mongodb+srv://ankitsharma21598:Pxj5n6XGxLiuDeNS@cluster0.r2q6ikg.mongodb.net/?retryWrites=true&w=majority";
     await mongoose.connect(db_url, {
       useNewUrlParser: true,
       useUnifiedTopology: true,

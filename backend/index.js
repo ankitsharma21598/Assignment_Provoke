@@ -3,11 +3,19 @@ const app = express();
 const DataBaseCon = require("./Middlewares/DataBaseCon");
 const indexRoutes = require("./Routes/index.routes");
 const cookieParser = require("cookie-parser");
-
+const cors = require('cors');
 // !----------------------------------------------------
 
 // TODO : DataBase connection function
 DataBaseCon();
+
+app.use(cors(
+  {
+    origin: 'http://localhost:3000',
+    methods:["POST","GET"],
+    credentials: true
+  }
+));
 
 // TODO : express body parse
 app.use(express.json());

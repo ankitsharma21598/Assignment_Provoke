@@ -11,7 +11,7 @@ DataBaseCon();
 
 app.use(cors(
   {
-    origin: 'http://localhost:3000',
+    origin: 'https://assignment-provoke-api.vercel.app/',
     methods:["POST","GET"],
     credentials: true
   }
